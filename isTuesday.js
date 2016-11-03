@@ -6,5 +6,5 @@ function isTuesday(){
   return (today.getDay() == 2);
 }
 const assert = require ('assert');
-assert.equal(isTuesday(), false)
+assert.equal(isTuesday(), false);
 console.log(isTuesday());
