@@ -1,4 +1,8 @@
-
+/*
+* This function takes in a string parameter representing date
+* From the string passed, it determines the day of the week of the specific date
+* And returns it.
+*/
 function getDay(date){
   var weekDays = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   Adate = date.split("/"); //extracting data from the date parameter
