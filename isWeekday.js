@@ -6,10 +6,16 @@ const date = new Date('2010-04-01');
 //look up the week day text string from the Array
 //console.log(weekDays[date.getDay()]);
 
-function isWeekDay(day){
+/*function isWeekDay(day){
   var weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   return (weekDays.indexOf(day) <= 4);
-}
+}*/
+var isweekday = function(day){
+  return !day.startsWith('S');
+};
+
 const assert = require ('assert');
-assert.equal(isWeekDay("Sunday"), false);
-assert.equal(isWeekDay("Tuesday"),true);
+assert.equal(isweekday("Sunday"), false);
+assert.equal(isweekday("Tuesday"),true);
+console.log(isweekday("Tuesday"));
+assert.equal(isweekday("Tuesday"),true);
