@@ -10,4 +10,6 @@ function isWeekDay(day){
   var weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   return (weekDays.indexOf(day) <= 4);
 }
-console.log(isWeekDay("Tuesday"));
+const assert = require ('assert');
+assert.equal(isWeekDay("Sunday"), false);
+assert.equal(isWeekDay("Tuesday"),true);

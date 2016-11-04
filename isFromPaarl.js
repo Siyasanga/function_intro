@@ -7,5 +7,5 @@ function isFromPaarl(carReg){
 }
 const assert = require ('assert');
 assert.equal(isFromPaarl('CJ 523519'), true);
-console.log(isFromPaarl('CJ 523519'));
-console.log(isFromPaarl('CA 812328'));
+assert.equal(isFromPaarl('CJ 523519'),true);
+assert.equal(isFromPaarl('CA 812328'), false);

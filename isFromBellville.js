@@ -5,5 +5,7 @@
 function isFromBellville(carReg){
   return carReg.startsWith('CY');
 }
-console.log(isFromBellville('CY 523519'));
-console.log(isFromBellville('CJ 812328'));
+console.log();
+const assert = require('assert');
+assert.equal(isFromBellville('CY 523519'),true);
+assert.equal(isFromBellville('CJ 812328'),false);

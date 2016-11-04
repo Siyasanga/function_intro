@@ -6,6 +6,6 @@ function isFromLimpopo(carReg){
   return (carReg.startsWith('DRT') && carReg.endsWith('L'));
 }
 const assert = require ('assert');
-assert.equal(isFromPaarl('DRT 122 L'), true);
-console.log(isFromLimpopo('CJ 523519'));
-console.log(isFromLimpopo('DRT 122 L'));
+assert.equal(isFromLimpopo('DRT 122 L'), true);
+assert.equal(isFromLimpopo('CJ 523519'), false);
+assert.equal(isFromLimpopo('DRT 122 L'), true);

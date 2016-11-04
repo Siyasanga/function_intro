@@ -7,5 +7,5 @@ function isFromGauteng(carReg){
 }
 const assert = require ('assert');
 assert.equal(isFromPaarl('DR 12 TY GP'), true);
-console.log(isFromGauteng('CJ 523519'));
-console.log(isFromGauteng('DR 812328 GP'));
+assert.equal(isFromGauteng('CJ 523519'),false);
+assert.equal(isFromGauteng('DR 812328 GP'),true);

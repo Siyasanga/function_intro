@@ -13,4 +13,5 @@ var theParamFunction = function(num1, num2){
 };
 
 //prints 3 on the console
-console.log(theParamFunction(1,2));
+const assert = require('assert');
+assert.equal(theParamFunction(1,2),3);

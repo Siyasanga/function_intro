@@ -7,4 +7,3 @@ function isTuesday(){
 }
 const assert = require ('assert');
 assert.equal(isTuesday(), false);
-console.log(isTuesday());
